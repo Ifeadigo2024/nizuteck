@@ -1,0 +1,416 @@
+/* =====================================================
+   PREMIUM MOBILE DROPDOWN NAV (CORRECTED)
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  /* Show hamburger on mobile */
+  .nav-toggle {
+    display: block;
+    z-index: 30;
+  }
+
+  /* Anchor dropdown */
+  .nav {
+    position: relative;
+    z-index: 20;
+  }
+
+  /* Dropdown container */
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    width: min(100%, 360px);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+
+    padding: var(--space-4);
+
+    /* ✅ Proper dark-glass balance */
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-lg);
+
+    box-shadow:
+      0 25px 50px rgba(0, 0, 0, 0.45);
+
+    /* Layer control */
+    z-index: 25;
+
+    /* Hidden state */
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+
+    transition:
+      opacity 0.25s var(--ease),
+      transform 0.25s var(--ease);
+  }
+
+  /* Open state */
+  .nav-links.nav-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Nav items */
+  .nav-links a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.65rem 0.8rem;
+    border-radius: 0.6rem;
+
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  /* CTA inside dropdown */
+  .nav-cta {
+    margin-top: var(--space-2);
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+
+
+
+/* =====================================================
+   FOOTER RESPONSIVE LAYOUT
+   ===================================================== */
+
+@media (min-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1.5fr 1fr auto;
+    align-items: start;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+
+  .footer-meta {
+    text-align: right;
+  }
+}
+
+
+
+/* =====================================================
+   PAGE-SPECIFIC MICRO POLISH
+   ===================================================== */
+
+/* Service cards spacing */
+.service-card > * + * {
+  margin-top: var(--space-2);
+}
+
+/* About page typography rhythm */
+.about-block h2 {
+  margin-bottom: var(--space-3);
+}
+
+.about-block p {
+  max-width: 65ch;
+}
+
+
+/* =====================================================
+   PROJECT DETAIL PAGE
+   ===================================================== */
+
+.project-hero {
+  padding: var(--space-6) var(--space-4);
+}
+
+.project-hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-summary {
+  max-width: 55ch;
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+}
+
+/* Main content */
+.project-content {
+  padding: var(--space-6) var(--space-4);
+}
+
+.project-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Content blocks */
+.project-block + .project-block {
+  margin-top: var(--space-6);
+}
+
+.project-block h2 {
+  margin-bottom: var(--space-2);
+}
+
+.project-block p {
+  max-width: 60ch;
+}
+
+.project-block ul {
+  padding-left: 1.2rem;
+}
+
+.project-block li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* Back link */
+.project-back {
+  padding: var(--space-5) var(--space-4);
+}
+
+/* =====================================================
+   HOMEPAGE WORK PREVIEW ENHANCEMENT
+   ===================================================== */
+
+.work-footer {
+  margin-top: var(--space-5);
+  text-align: center;
+}
+
+.work-footer .btn {
+  opacity: 0.9;
+}
+
+/* =====================================================
+   PREMIUM WORK PAGE
+   ===================================================== */
+
+.work-list {
+  padding: var(--space-6) var(--space-4);
+}
+
+.work-list-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* Card wrapper (entire card clickable) */
+.work-item-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-card-inner {
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+
+  transition:
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+}
+
+/* Hover interaction */
+.work-item-card:hover .work-card-inner {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Disabled cards */
+.work-item-card.is-disabled {
+  cursor: default;
+}
+
+.work-item-card.is-disabled:hover .work-card-inner {
+  transform: none;
+  border-color: var(--glass-border);
+}
+
+/* Typography */
+.work-card-inner h2 {
+  margin: var(--space-2) 0 var(--space-2);
+}
+
+.work-description {
+  max-width: 60ch;
+  margin-bottom: var(--space-3);
+}
+
+/* Highlights */
+.work-highlights {
+  padding-left: 1.2rem;
+  margin-bottom: var(--space-3);
+}
+
+.work-highlights li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* CTA */
+.work-cta {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.work-cta.muted {
+  color: var(--text-muted);
+}
+
+
+/* =====================================================
+   MOBILE HERO REFINEMENT
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--space-7) + 2rem);
+    padding-bottom: var(--space-6);
+  }
+
+  .hero-inner {
+    max-width: 100%;
+  }
+
+  /* Eyebrow */
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    margin-bottom: var(--space-3);
+    opacity: 0.85;
+  }
+
+  /* Headline */
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+
+  .hero-title span.hero-accent {
+    display: block;
+    color: var(--accent);
+    margin-top: 0.25rem;
+  }
+
+  /* Description */
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: var(--space-3);
+    max-width: 38ch;
+  }
+
+  /* Actions */
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+  }
+
+  .btn-secondary {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+}
+
+
+/* =====================================================
+   PREMIUM ABOUT PAGE
+   ===================================================== */
+
+.about-content {
+  padding: var(--space-6) var(--space-4);
+}
+
+.about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* Card */
+.about-card {
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+
+  transition:
+    transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+
+/* Subtle lift on reveal / hover */
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.45);
+}
+
+/* Eyebrow */
+.about-eyebrow {
+  display: inline-block;
+  margin-bottom: var(--space-2);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+/* Headings */
+.about-card h2 {
+  margin-bottom: var(--space-3);
+  max-width: 20ch;
+}
+
+/* Text */
+.about-card p {
+  max-width: 60ch;
+}
+
+
+

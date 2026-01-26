@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nizuteck",
+  "url": "https://nizuteck.com",
+  "description": "Digital product studio building scalable websites and systems with clarity and intention.",
+  "sameAs": [
+    "https://twitter.com/nizuteck",
+    "https://instagram.com/nizuteck"
+  ]
+}
+</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nizuteck — Digital Products Built to Scale</title>
+
+    <meta name="description" content="Nizuteck is a digital product studio designing and building scalable websites and systems with structure, clarity, and long-term growth in mind." />
+
+    <link rel="canonical" href="https://nizuteck.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nizuteck — Digital Products Built to Scale" />
+    <meta property="og:description" content="We design and build digital systems that scale — not just websites that launch." />
+    <meta property="og:url" content="https://nizuteck.com/" />
+    <meta property="og:image" content="https://nizuteck.com/assets/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nizuteck — Digital Products Built to Scale" />
+    <meta name="twitter:description" content="Designing and building scalable digital products with clarity and intention." />
+    <meta name="twitter:image" content="https://nizuteck.com/assets/og-image.jpg" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b0d10" />
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/views.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <script type="application/ld+json">...</script>
+</head>
+
+<body>
+
+  <!-- NAV (partial) -->
+  <div data-include="partials/nav-root.html"></div>
+
+  <!-- HERO -->
+  <main class="hero" data-reveal>
+    <div class="hero-inner">
+
+      <span class="hero-eyebrow">Digital Product Studio</span>
+
+      <h1 class="hero-title">
+        We build digital systems
+        <span class="hero-accent">designed to scale.</span>
+      </h1>
+
+
+
+      <p class="hero-description">
+        Nizuteck designs and develops clean, high-performance websites and
+        digital products with structure, clarity, and long-term growth in mind.
+      </p>
+
+      <div class="hero-actions">
+        <a href="pages/work.html" class="btn btn-primary" aria-label="View selected work">View Work</a>
+        <a href="pages/contact.html" class="btn btn-secondary">Let’s Talk</a>
+      </div>
+
+    </div>
+  </main>
+
+  <section class="philosophy" data-reveal>
+  <div class="philosophy-inner">
+    <p>
+      Most websites are built to launch quickly.
+      We design systems meant to grow — with structure,
+      performance, and long-term clarity at the core.
+    </p>
+  </div>
+  </section>
+
+
+  <!-- WORK PREVIEW -->
+<section class="work-preview" data-reveal>
+  <div class="work-inner">
+
+    <header class="work-header">
+      <h2>Selected Work</h2>
+      <p>
+        A small selection of projects focused on structure,
+        performance, and long-term scalability.
+      </p>
+    </header>
+
+    <div class="work-grid" id="workGrid">
+
+      <!-- Project 1 -->
+      <article class="work-card">
+        <span class="work-tag">Web Platform</span>
+        <h3>Choplife Café</h3>
+        <p>
+          A scalable food ordering platform built with clean UX,
+          modular frontend logic, and secure payment flows.
+        </p>
+        <a href="pages/choplife-cafe.html" class="work-link">
+          View case study →
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="work-card">
+        <span class="work-tag">Studio Website</span>
+        <h3>Nizuteck Studio</h3>
+        <p>
+          A minimal digital studio site focused on typography,
+          glassmorphism, and system-first design principles.
+        </p>
+        <a href="pages/work.html" class="work-link">
+          View project →
+        </a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="work-card">
+        <span class="work-tag">E-commerce Concept</span>
+        <h3>VEXO Clothing</h3>
+        <p>
+          A future-ready e-commerce concept designed for
+          scalability, clarity, and high-volume product growth.
+        </p>
+        <a href="pages/work.html" class="work-link">
+          View project →
+        </a>
+      </article>
+
+    </div>
+
+    <div class="work-footer">
+      <a href="pages/work.html" class="btn btn-secondary">
+        View all work
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FOOTER (partial) -->
+  <div data-include="partials/footer.html"></div>
+
+  <!-- UTILITIES (must load first) -->
+  <script src="js/utils/include.js"></script>
+
+  <!-- CORE SCRIPTS -->
+  <script src="js/config.js"></script>
+  <script src="js/modules/menu.js"></script>
+  <script src="js/modules/reveal.js"></script>
+  <script src="js/modules/theme.js"></script>
+  <script src="js/modules/work-preview.js"></script>
+
+</body>
+</html>

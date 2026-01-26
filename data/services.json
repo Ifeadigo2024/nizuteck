@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Website Design & Development",
+    "summary": "High-performance, responsive websites built with structure, clarity, and long-term growth in mind.",
+    "points": [
+      "Custom UI & UX design",
+      "Clean, maintainable code",
+      "Performance and SEO focused",
+      "Mobile-first implementation"
+    ]
+  },
+  {
+    "title": "Digital Product Systems",
+    "summary": "We design and build scalable digital systems — not just pages — so growth never breaks the foundation.",
+    "points": [
+      "System-first architecture",
+      "Scalable frontend structure",
+      "Upgrade-ready foundations",
+      "Technical decision planning"
+    ]
+  },
+  {
+    "title": "Technical Consultation",
+    "summary": "We help teams fix broken systems, refactor messy codebases, and plan future upgrades properly.",
+    "points": [
+      "Codebase audits",
+      "Refactoring strategy",
+      "Performance diagnosis",
+      "Growth planning"
+    ]
+  }
+]
