@@ -3,6 +3,20 @@
    ===================================================== */
 
 @media (max-width: 768px) {
+  body.menu-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 15;
+    background: rgba(6, 10, 18, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    pointer-events: none;
+  }
+
+  .site-header {
+    z-index: 30;
+  }
 
   /* Show hamburger on mobile */
   .nav-toggle {
@@ -20,8 +34,9 @@
   .nav-links {
     position: absolute;
     top: calc(100% + 0.75rem);
-    right: 0;
-    width: min(100%, 360px);
+    left: 50%;
+    right: auto;
+    width: min(calc(100vw - 2rem), 360px);
 
     display: flex;
     flex-direction: column;
@@ -29,11 +44,11 @@
 
     padding: var(--space-4);
 
-    /* ✅ Proper dark-glass balance */
-    background: rgba(0, 0, 0, 0.75);
+    /* Proper dark-glass balance */
+    background: var(--surface-overlay-strong);
     backdrop-filter: blur(20px);
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
 
     box-shadow:
@@ -44,7 +59,7 @@
 
     /* Hidden state */
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translate(-50%, -8px);
     pointer-events: none;
 
     transition:
@@ -55,7 +70,7 @@
   /* Open state */
   .nav-links.nav-open {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
     pointer-events: auto;
   }
 
@@ -70,7 +85,7 @@
   }
 
   .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(47, 107, 255, 0.16);
   }
 
   /* CTA inside dropdown */
@@ -78,8 +93,8 @@
     margin-top: var(--space-2);
     text-align: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(120, 164, 255, 0.4);
+    background: rgba(47, 107, 255, 0.18);
   }
 }
 
@@ -114,15 +129,6 @@
 /* Service cards spacing */
 .service-card > * + * {
   margin-top: var(--space-2);
-}
-
-/* About page typography rhythm */
-.about-block h2 {
-  margin-bottom: var(--space-3);
-}
-
-.about-block p {
-  max-width: 65ch;
 }
 
 
@@ -411,6 +417,7 @@
 .about-card p {
   max-width: 60ch;
 }
+
 
 
 

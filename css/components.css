@@ -22,13 +22,15 @@
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #0b0d10;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #f7fbff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 30px rgba(15, 25, 50, 0.35), 0 0 0 1px rgba(47, 107, 255, 0.28);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 14px 36px rgba(13, 22, 44, 0.5), 0 0 22px var(--accent-glow);
 }
 
 .btn-secondary {
@@ -39,7 +41,7 @@
 
 .btn-secondary:hover {
   border-color: var(--accent);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(47, 107, 255, 0.12);
 }
 
 
@@ -105,7 +107,7 @@ a {
 .work-card:hover,
 .service-card:hover,
 .contact-card:hover {
-  background: rgba(255, 255, 255, 0.09);
+  background: rgba(47, 107, 255, 0.12);
   transform: translateY(-4px);
   border-color: var(--accent);
 }
@@ -203,25 +205,4 @@ a {
 
 
 
-/* =====================================================
-   WORK PAGE ITEM (LIST VIEW)
-   ===================================================== */
 
-.work-item {
-  padding-bottom: var(--space-5);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.work-description {
-  margin-bottom: var(--space-3);
-}
-
-.work-highlights {
-  padding-left: 1.2rem;
-}
-
-.work-highlights li {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 0.4rem;
-}

@@ -1,3 +1,8 @@
+function setMenuState(links, isOpen) {
+  links.classList.toggle("nav-open", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
+}
+
 document.addEventListener("click", function (e) {
   const toggle = e.target.closest(".nav-toggle");
   const nav = document.querySelector(".nav");
@@ -7,25 +12,26 @@ document.addEventListener("click", function (e) {
 
   // Toggle menu
   if (toggle) {
-    links.classList.toggle("nav-open");
+    const isOpen = !links.classList.contains("nav-open");
+    setMenuState(links, isOpen);
     return;
   }
 
   // Close when clicking outside nav
   if (!e.target.closest(".nav")) {
-    links.classList.remove("nav-open");
+    setMenuState(links, false);
   }
 
   // Close when clicking a nav link
   if (e.target.closest(".nav-links a")) {
-    links.classList.remove("nav-open");
+    setMenuState(links, false);
   }
 });
 
 // Close on resize (desktop)
 window.addEventListener("resize", () => {
   const links = document.querySelector(".nav-links");
-  if (window.innerWidth > 768) {
-    links?.classList.remove("nav-open");
+  if (window.innerWidth > 768 && links) {
+    setMenuState(links, false);
   }
 });

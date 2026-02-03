@@ -6,23 +6,27 @@
   /* -------------------------
      Glassmorphism
      ------------------------- */
-  --glass-bg: rgba(255, 255, 255, 0.06);
-  --glass-bg-strong: rgba(255, 255, 255, 0.09);
-  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-strong: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(147, 179, 255, 0.24);
   --glass-blur: blur(14px);
-  --glass-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --glass-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 
   /* -------------------------
      Core colors
      ------------------------- */
-  --bg-main: #0b0d10;
-  --bg-soft: #111418;
+  --bg-main: #06080d;
+  --bg-soft: #0c111b;
+  --surface-overlay: rgba(7, 10, 17, 0.78);
+  --surface-overlay-strong: rgba(6, 9, 15, 0.9);
 
   --text-main: rgba(255, 255, 255, 0.95);
-  --text-muted: rgba(255, 255, 255, 0.68);
+  --text-muted: rgba(227, 235, 255, 0.72);
 
-  --accent: #6c8df2;
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --accent: #2f6bff;
+  --accent-strong: #1e52e5;
+  --accent-glow: rgba(47, 107, 255, 0.45);
+  --border-subtle: rgba(162, 190, 255, 0.18);
 
   /* -------------------------
      Typography
@@ -81,7 +85,10 @@ body {
   font-size: var(--fs-base);
   line-height: 1.7;
 
-  background: var(--bg-main);
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(47, 107, 255, 0.2), transparent 65%),
+    radial-gradient(700px 420px at 90% 0%, rgba(47, 107, 255, 0.12), transparent 68%),
+    linear-gradient(180deg, #090d15 0%, var(--bg-main) 55%, #05070c 100%);
   color: var(--text-main);
 
   -webkit-font-smoothing: antialiased;
