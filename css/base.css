@@ -58,6 +58,7 @@
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
+  --header-height: 74px;
 
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -76,10 +77,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 1rem);
 }
 
 body {
   margin: 0;
+  padding-top: var(--header-height);
 
   font-family: var(--font-sans);
   font-size: var(--fs-base);

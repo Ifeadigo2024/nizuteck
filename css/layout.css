@@ -3,7 +3,7 @@
    ===================================================== */
 
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
   padding: var(--space-7) var(--space-4);
@@ -71,14 +71,17 @@
    ===================================================== */
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
 
   background: var(--surface-overlay);
   backdrop-filter: blur(16px);
 
   border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 .nav {

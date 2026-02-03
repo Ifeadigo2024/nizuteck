@@ -1,32 +1,44 @@
 [
   {
-    "title": "Website Design & Development",
-    "summary": "High-performance, responsive websites built with structure, clarity, and long-term growth in mind.",
+    "icon": "website",
+    "kicker": "Website Engineering",
+    "title": "Website Design and Development",
+    "summary": "High-performance, conversion-aware websites built with clean architecture and long-term maintainability in mind.",
+    "timeline": "Typical sprint: 3 to 6 weeks",
+    "outcome": "Fast pages, stronger trust, and a site your team can scale.",
     "points": [
-      "Custom UI & UX design",
-      "Clean, maintainable code",
-      "Performance and SEO focused",
-      "Mobile-first implementation"
+      "Custom UX and visual system",
+      "Responsive and accessibility-first frontend",
+      "Performance and SEO optimization",
+      "Reusable sections for easy future updates"
     ]
   },
   {
+    "icon": "system",
+    "kicker": "Product Systems",
     "title": "Digital Product Systems",
-    "summary": "We design and build scalable digital systems — not just pages — so growth never breaks the foundation.",
+    "summary": "We design connected digital systems, not isolated pages, so your growth does not break the foundation.",
+    "timeline": "Typical sprint: 4 to 8 weeks",
+    "outcome": "Clearer workflows, stable architecture, and fewer rebuilds.",
     "points": [
-      "System-first architecture",
-      "Scalable frontend structure",
-      "Upgrade-ready foundations",
-      "Technical decision planning"
+      "System-level information architecture",
+      "Scalable component and module planning",
+      "Technical direction for future features",
+      "Structured documentation for team handoff"
     ]
   },
   {
+    "icon": "consult",
+    "kicker": "Technical Direction",
     "title": "Technical Consultation",
-    "summary": "We help teams fix broken systems, refactor messy codebases, and plan future upgrades properly.",
+    "summary": "We help teams untangle messy codebases, improve performance, and define a practical roadmap for upgrades.",
+    "timeline": "Typical sprint: 1 to 3 weeks",
+    "outcome": "Lower technical debt and a clearer path to ship confidently.",
     "points": [
-      "Codebase audits",
-      "Refactoring strategy",
-      "Performance diagnosis",
-      "Growth planning"
+      "Codebase audit and risk mapping",
+      "Refactor and migration strategy",
+      "Performance diagnosis and quick wins",
+      "Prioritized implementation roadmap"
     ]
   }
 ]
