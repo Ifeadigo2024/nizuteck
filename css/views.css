@@ -8,7 +8,7 @@
     position: fixed;
     inset: 0;
     z-index: 15;
-    background: rgba(6, 10, 18, 0.5);
+    background: rgba(17, 17, 17, 0.18);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     pointer-events: none;
@@ -81,7 +81,7 @@
     padding: 0.65rem 0.8rem;
     border-radius: 0.6rem;
 
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-main);
   }
 
   .nav-links a:hover {
@@ -93,8 +93,8 @@
     margin-top: var(--space-2);
     text-align: center;
 
-    border: 1px solid rgba(120, 164, 255, 0.4);
-    background: rgba(47, 107, 255, 0.18);
+    border: 1px solid rgba(47, 107, 255, 0.32);
+    background: rgba(47, 107, 255, 0.12);
   }
 }
 
@@ -277,21 +277,21 @@
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #d9e5ff;
-  background: rgba(47, 107, 255, 0.22);
-  border: 1px solid rgba(113, 160, 255, 0.35);
+  color: var(--accent-strong);
+  background: rgba(47, 107, 255, 0.12);
+  border: 1px solid rgba(47, 107, 255, 0.28);
 }
 
 .work-status--soon {
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(149, 167, 211, 0.2);
-  border-color: rgba(188, 203, 241, 0.25);
+  color: var(--text-main);
+  background: rgba(17, 17, 17, 0.05);
+  border-color: rgba(17, 17, 17, 0.14);
 }
 
 .work-status--concept {
-  color: rgba(202, 225, 255, 0.9);
-  background: rgba(38, 64, 116, 0.4);
-  border-color: rgba(101, 149, 233, 0.35);
+  color: var(--accent);
+  background: rgba(47, 107, 255, 0.08);
+  border-color: rgba(47, 107, 255, 0.24);
 }
 
 /* Typography */
@@ -316,9 +316,9 @@
   font-size: 0.72rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgba(228, 236, 255, 0.9);
-  border: 1px solid rgba(146, 176, 247, 0.34);
-  background: rgba(21, 33, 58, 0.5);
+  color: var(--text-main);
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  background: rgba(17, 17, 17, 0.04);
 }
 
 /* Highlights */
@@ -337,8 +337,8 @@
   margin: 0;
   border-radius: calc(var(--radius-lg) - 6px);
   overflow: hidden;
-  border: 1px solid rgba(138, 176, 255, 0.3);
-  background: linear-gradient(145deg, rgba(20, 33, 62, 0.88), rgba(7, 11, 20, 0.96));
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(145deg, rgba(47, 107, 255, 0.1), rgba(255, 255, 255, 0.96));
 }
 
 .work-card-preview img {
@@ -354,8 +354,8 @@
   font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: rgba(212, 226, 255, 0.86);
-  border-top: 1px solid rgba(138, 176, 255, 0.28);
+  color: var(--text-muted);
+  border-top: 1px solid var(--glass-border);
 }
 
 .preview-mock {
@@ -366,24 +366,24 @@
 }
 
 .preview-mock--studio {
-  background: linear-gradient(165deg, rgba(36, 62, 115, 0.85), rgba(8, 14, 26, 0.96));
+  background: linear-gradient(165deg, rgba(47, 107, 255, 0.18), rgba(242, 248, 255, 0.96));
 }
 
 .preview-mock--commerce {
-  background: linear-gradient(165deg, rgba(16, 42, 92, 0.85), rgba(6, 13, 24, 0.96));
+  background: linear-gradient(165deg, rgba(47, 107, 255, 0.14), rgba(248, 251, 255, 0.98));
 }
 
 .mock-pill {
   width: 36%;
   height: 0.55rem;
   border-radius: 999px;
-  background: rgba(156, 192, 255, 0.9);
+  background: rgba(47, 107, 255, 0.5);
 }
 
 .mock-line {
   height: 0.45rem;
   border-radius: 999px;
-  background: rgba(205, 225, 255, 0.65);
+  background: rgba(47, 107, 255, 0.24);
 }
 
 .mock-line--short {
@@ -399,8 +399,8 @@
 .mock-grid span {
   aspect-ratio: 1 / 1;
   border-radius: 0.7rem;
-  background: rgba(235, 245, 255, 0.2);
-  border: 1px solid rgba(185, 209, 255, 0.25);
+  background: rgba(47, 107, 255, 0.09);
+  border: 1px solid rgba(47, 107, 255, 0.22);
 }
 
 .mock-grid--two {
@@ -456,7 +456,7 @@
 }
 
 .contact-panel--lead {
-  background: linear-gradient(150deg, rgba(47, 107, 255, 0.18), rgba(12, 18, 30, 0.9));
+  background: linear-gradient(150deg, rgba(47, 107, 255, 0.16), rgba(255, 255, 255, 0.95));
 }
 
 .contact-kicker {
@@ -464,11 +464,11 @@
   margin-bottom: var(--space-2);
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
-  border: 1px solid rgba(155, 187, 255, 0.42);
+  border: 1px solid rgba(47, 107, 255, 0.32);
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #d7e6ff;
+  color: var(--accent-strong);
 }
 
 .contact-actions {
@@ -486,9 +486,9 @@
 .contact-chip {
   padding: 0.42rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid rgba(143, 179, 252, 0.35);
-  background: rgba(20, 33, 58, 0.5);
-  color: rgba(229, 238, 255, 0.95);
+  border: 1px solid rgba(47, 107, 255, 0.24);
+  background: rgba(47, 107, 255, 0.09);
+  color: var(--text-main);
   font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -536,7 +536,7 @@
 .contact-note {
   margin: 0;
   font-size: 0.92rem;
-  color: rgba(210, 226, 255, 0.85);
+  color: var(--text-muted);
 }
 
 .contact-card {
@@ -564,7 +564,7 @@
   padding: var(--space-4);
   border-radius: var(--radius-lg);
   border: 1px solid var(--glass-border);
-  background: linear-gradient(150deg, rgba(47, 107, 255, 0.16), rgba(7, 12, 22, 0.95));
+  background: linear-gradient(150deg, rgba(47, 107, 255, 0.14), rgba(255, 255, 255, 0.96));
 }
 
 .services-kicker {
@@ -573,7 +573,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(210, 228, 255, 0.9);
+  color: var(--accent-strong);
 }
 
 .services-intro h2 {
@@ -623,7 +623,7 @@
 .service-icon svg {
   width: 1rem;
   height: 1rem;
-  stroke: #d9e6ff;
+  stroke: var(--accent-strong);
   fill: none;
   stroke-width: 1.8;
   stroke-linecap: round;
@@ -669,7 +669,7 @@
 
 .service-meta span {
   font-size: 0.8rem;
-  color: rgba(215, 228, 255, 0.86);
+  color: var(--text-muted);
 }
 
 .service-link {
@@ -689,8 +689,8 @@
 .services-flow-card {
   padding: var(--space-4);
   border-radius: 14px;
-  border: 1px solid rgba(126, 164, 245, 0.3);
-  background: rgba(10, 16, 29, 0.8);
+  border: 1px solid rgba(47, 107, 255, 0.22);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .services-flow-card > span:not(.services-flow-icon) {
@@ -699,7 +699,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(196, 217, 255, 0.9);
+  color: var(--text-muted);
 }
 
 .services-flow-icon {
@@ -710,8 +710,8 @@
   height: 2rem;
   margin-bottom: 0.4rem;
   border-radius: 999px;
-  border: 1px solid rgba(126, 164, 245, 0.45);
-  background: rgba(47, 107, 255, 0.18);
+  border: 1px solid rgba(47, 107, 255, 0.28);
+  background: rgba(47, 107, 255, 0.12);
   font-size: 1rem;
 }
 
@@ -844,7 +844,7 @@
   padding: var(--space-5);
   border-radius: var(--radius-lg);
   border: 1px solid var(--glass-border);
-  background: linear-gradient(145deg, rgba(47, 107, 255, 0.16), rgba(8, 14, 25, 0.94));
+  background: linear-gradient(145deg, rgba(47, 107, 255, 0.14), rgba(255, 255, 255, 0.95));
   box-shadow: var(--glass-shadow);
 }
 
@@ -852,7 +852,7 @@
   margin: 0 0 var(--space-4);
   max-width: 52ch;
   font-size: 1.2rem;
-  color: rgba(233, 240, 255, 0.94);
+  color: var(--text-main);
 }
 
 .about-metrics {
@@ -867,21 +867,21 @@
   padding: 0.8rem 0.9rem;
   border-radius: 0.85rem;
   border: 1px solid rgba(138, 176, 255, 0.34);
-  background: rgba(13, 22, 41, 0.7);
+  background: rgba(255, 255, 255, 0.88);
 }
 
 .about-metric-value {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #e0ecff;
+  color: var(--text-main);
 }
 
 .about-metric-label {
   font-size: 0.76rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(194, 212, 247, 0.82);
+  color: var(--text-muted);
 }
 
 .about-card {
@@ -934,7 +934,7 @@
 }
 
 .about-card--cta {
-  background: linear-gradient(155deg, rgba(47, 107, 255, 0.1), rgba(8, 13, 24, 0.95));
+  background: linear-gradient(155deg, rgba(47, 107, 255, 0.1), rgba(255, 255, 255, 0.96));
 }
 
 .about-card--cta .btn {
