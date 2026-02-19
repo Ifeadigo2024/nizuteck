@@ -30,16 +30,63 @@
   <!-- NAV -->
   <div data-include="../partials/nav-pages.html"></div>
 
-  <!-- PAGE INTRO -->
-  <!-- <main class="page-hero" data-reveal>
-    <div class="page-inner">
-      <h1>Selected Work</h1>
-      <p>
-        A curated selection of digital products built with
-        structure, performance, and long-term scalability in mind.
-      </p>
+  <!-- WORK HERO -->
+  <section class="work-hero" data-reveal data-work-hero>
+    <div class="work-hero-inner">
+      <header class="work-hero-head">
+        <span class="work-hero-kicker">Featured Work</span>
+        <!-- <h1>Projects in motion, built for growth.</h1> -->
+      </header>
+
+      <div class="work-hero-stage" aria-live="polite">
+        <article class="work-hero-slide is-active" data-project="Choplife Cafe">
+          <img
+            class="work-hero-media"
+            src="../assets/work/choplife-cafe/flow.jpg"
+            alt="Choplife Cafe ordering flow interface"
+            loading="eager"
+          />
+          <div class="work-hero-shade" aria-hidden="true"></div>
+          <div class="work-hero-copy">
+            <span class="work-hero-type">Live Project</span>
+            <h2>Choplife Caf&eacute;</h2>
+            <p>Food ordering platform with smooth checkout and system-first UX.</p>
+          </div>
+        </article>
+
+        <article class="work-hero-slide" data-project="Choplife Events">
+          <img
+            class="work-hero-media"
+            src="../assets/work/choplife-events/work.png"
+            alt="Choplife Events website preview"
+            loading="lazy"
+          />
+          <div class="work-hero-shade" aria-hidden="true"></div>
+          <div class="work-hero-copy">
+            <span class="work-hero-type">Live Project</span>
+            <h2>Choplife Events</h2>
+            <p>Event discovery website focused on fast scanning and clear navigation.</p>
+          </div>
+        </article>
+
+        <article class="work-hero-slide work-hero-slide--concept" data-project="Nizuteck Studio">
+          <div class="work-hero-fill" aria-hidden="true"></div>
+          <div class="work-hero-shade" aria-hidden="true"></div>
+          <div class="work-hero-copy">
+            <span class="work-hero-type">In Progress</span>
+            <h2>Nizuteck Studio</h2>
+            <p>Brand-led studio experience with a clean visual system and calm motion.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="work-hero-nav" aria-label="Featured projects">
+        <button class="work-hero-dot is-active" type="button" data-slide="0" aria-pressed="true">Choplife Caf&eacute;</button>
+        <button class="work-hero-dot" type="button" data-slide="1" aria-pressed="false">Choplife Events</button>
+        <button class="work-hero-dot" type="button" data-slide="2" aria-pressed="false">Nizuteck Studio</button>
+      </div>
     </div>
-  </main> -->
+  </section>
 
   <!-- WORK LIST -->
   <section class="work-list">
@@ -57,21 +104,8 @@
             <h2>Choplife Caf&eacute;</h2>
 
             <p class="work-description">
-              A scalable food ordering platform designed with clean UX,
-              structured frontend logic, and secure payment workflows.
+              Food ordering platform built for quick checkout and long-term expansion.
             </p>
-
-            <div class="work-meta">
-              <span>Role: Product + Frontend</span>
-              <span>Timeline: 6 weeks</span>
-              <span>Focus: Checkout conversion</span>
-            </div>
-
-            <ul class="work-highlights">
-              <li>Modular frontend architecture</li>
-              <li>Integrated cart, checkout, and order storage</li>
-              <li>Built for performance and future expansion</li>
-            </ul>
           </div>
 
           <figure class="work-card-preview">
@@ -80,7 +114,7 @@
               alt="Choplife Cafe ordering flow interface"
               loading="lazy"
             />
-            <figcaption>Preview: ordering flow, cart, checkout, payment.</figcaption>
+            <figcaption>Ordering flow preview.</figcaption>
           </figure>
 
           <span class="work-cta">
@@ -107,21 +141,8 @@
             <h2>Choplife Events</h2>
 
             <p class="work-description">
-              A polished event showcase website focused on
-              clear navigation, fast content access, and visual clarity.
+              Event platform designed for clear navigation and quick discovery.
             </p>
-
-            <div class="work-meta">
-              <span>Role: Web Design + Frontend</span>
-              <span>Type: Live Marketing Site</span>
-              <span>Focus: Event discovery</span>
-            </div>
-
-            <ul class="work-highlights">
-              <li>Clean event-first information structure</li>
-              <li>Visual hierarchy optimized for quick scanning</li>
-              <li>Live deployment for public access</li>
-            </ul>
           </div>
 
           <figure class="work-card-preview">
@@ -130,7 +151,7 @@
               alt="Choplife Events website preview"
               loading="lazy"
             />
-            <figcaption>Preview: featured events and website sections.</figcaption>
+            <figcaption>Event homepage preview.</figcaption>
           </figure>
 
           <span class="work-cta">
@@ -151,21 +172,8 @@
             <h2>Nizuteck Studio</h2>
 
             <p class="work-description">
-              A digital studio website focused on typography,
-              spacing systems, and glassmorphism UI principles.
+              Brand website currently in progress with a focused, minimal visual system.
             </p>
-
-            <div class="work-meta">
-              <span>Role: Brand + Web Design</span>
-              <span>Phase: Visual system</span>
-              <span>Focus: Trust + clarity</span>
-            </div>
-
-            <ul class="work-highlights">
-              <li>Custom design system</li>
-              <li>Glass UI with restrained motion</li>
-              <li>SEO and performance optimized</li>
-            </ul>
           </div>
 
           <figure class="work-card-preview work-card-preview--mock">
@@ -177,7 +185,7 @@
                 <span></span><span></span><span></span>
               </div>
             </div>
-            <figcaption>Preview: homepage hero and service blocks.</figcaption>
+            <figcaption>Studio concept preview.</figcaption>
           </figure>
 
           <span class="work-cta muted">
@@ -208,6 +216,7 @@
   <script src="../js/modules/menu.js"></script>
   <script src="../js/modules/reveal.js"></script>
   <script src="../js/modules/theme.js"></script>
+  <script src="../js/modules/work-hero.js"></script>
 
 </body>
 </html>
